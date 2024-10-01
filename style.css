@@ -10,6 +10,26 @@ body{
     background: linear-gradient(to right, #071952, #000000);
     }
 
+.general {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#bot3d{
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-between
+    
+}
+
+#bot3d img{
+    
+    width: 550px;
+    height: 650px;
+   
+}
+
+
 .main-div{
     display: flex;
     justify-content:center;
@@ -37,7 +57,7 @@ body{
 } */
 
 .menuToggle img{
-    width: 45px;
+    width: 35px;
 }
 .container{
     height: 30px;
@@ -47,9 +67,8 @@ body{
     background: #ffff;
     overflow: hidden;
     position: absolute;
-    bottom: 30px;
+    bottom: 50px;   
     z-index: -1;
-    /* display: none; */
     transition: .9s, height .9s ,width .5s;
     transition-delay: 0s,0.5s,0.5s;
     transition-timing-function:cubic-bezier(0.075,.82,.165,1) ;
@@ -57,7 +76,7 @@ body{
 
 }
 .menuToggle.active ~ .container{
-    height: 550px;
+    height: 530px;
     width: 390px;
     z-index: 1;
     transform: translateY(-55px);
@@ -216,8 +235,4 @@ body{
     outline: none;
     border: none;
     text-transform: capitalize;
-}
-.general {
-    display: grid;
-    grid-template-columns: 50% 50%;
 }
